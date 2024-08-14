@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>AWS 풀스택 학습 게시판</title>
+        <style>
+            table{
+                background-color: white;
+            }
+            .menu{
+                height: 30px;
+                background-color: pink;
+                color: white;
+                /* text-align: center;
+                vertical-align: middle; */
+                display: flex;
+                /* flexbox의 기본값은 row */
+                /* align-item의 정렬 방향은 수직선이 됩니다. */
+                /* align-items: center; -> 수직방향의 중앙 */
+                align-items: center;
+                /* justify-content의 정렬 방향은 주축의 수직 교차축입니다. */
+                /* row 설정에서는 수평방향이 됩니다. */
+                justify-content: center;
+                margin: 5px;
+            }
+            .menu:hover{
+                background-color: lavenderblush;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body style="background-color:  rgb(248, 229, 239);">
+        <table border="1" style="width: 700px; margin: auto;">
+            <tr>
+                <td colspan="2">
+                    <!-- 헤더부분 시작------------------------------------------------------------------>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <!-- 제목 -->
+                                <h2 style="color: hotpink;">&nbsp;&nbsp;AWS 풀스택 학습 커뮤니티</h2>
+                            </td>
+                            <td style="text-align: right;">
+                                <!--버튼들  -->
+                                <a href="join.html">회원가입</a> 
+                                &nbsp;&nbsp;
+                                <a href="login.html">로그인</a>
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- 헤더부분 종료------------------------------------------------------------------>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px;" valign="top">
+                    <!-- 메뉴부분 -->
+                    <div class="menu">자바 학습 게시판</div>
+                    <div class="menu">HTML/CSS 학습 게시판</div>
+                    <div class="menu">Javascript 학습 게시판</div>
+                    <div class="menu">Jquery 학습 게시판</div>
+                    <div class="menu">DBMS 학습 게시판</div>
+                    <div class="menu">Spring 학습 게시판</div>
+                </td>
+                <td>
+                    <!-- 내용부분 시작------------------------------------------------------------------>
+                    <!-- 게시판 머리 시작 -->
+                    <!-- 선택된 게시판 이름, 글작성 버튼 -->
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="height: 40px;">
+                                <!-- 선택된 게시판 이름 -->
+                                <span style="font-weight: bold; color: hotpink;">자바 학습 게시판</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;">
+                                <!-- 글작성 버튼 -->
+                                <a href="text.html">글쓰기</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- 게시판 머리 종료 -->
+                    <!-- 게시판 몸통 시작 -->
+                    <table border="1" style="width: 100%;">
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성일</th>
+                            <th>작성자</th>
+                            <th>조회수</th>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">3</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">4</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">5</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">6</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">7</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">8</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">9</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">10</td>
+                            <td>자바 기초 강의 입니다.<span style="color: red;">(1)</span></td>
+                            <td style="text-align: center;">2024-08-13</td>
+                            <td style="text-align: center;">홍길동</td>
+                            <td style="text-align: center;">10</td>
+                        </tr>
+                    </table>
+                    <!-- 게시판 몸통 종료 -->
+                    <!-- 게시판 꼬리 시작 -->
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="text-align: center;">
+                                |< << < 1 2 3 4 5 6 7 8 9 10 > >> >|
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- 게시판 꼬리 종료 -->
+                    <!-- 내용부분 종료------------------------------------------------------------------>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <!-- 풋터부분 -->
+                     Copyrigth by EZEN ALL rigths reserved
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
