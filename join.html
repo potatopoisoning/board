@@ -2,7 +2,7 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title>AWS 풀스택 학습 게시판</title>
+        <title>회원가입</title>
         <style>
             table{
                 background-color: white;
@@ -50,7 +50,7 @@
                         <tr>
                             <td>
                                 <!-- 제목 -->
-                                <h2 style="color: hotpink;">&nbsp;&nbsp;AWS 풀스택 학습 커뮤니티</h2>
+                                <h2 style="color: #DB7093;">&nbsp;&nbsp;AWS 풀스택 학습 커뮤니티</h2>
                             </td>
                             <td style="text-align: right;">
                                 <!--버튼들  -->
@@ -79,7 +79,7 @@
                     <table style="width: 100%;">
                         <tr>
                             <td style="height: 50px;">
-                                <span style="font-weight: bold; color: hotpink;">※ 회원가입</span>
+                                <span style="font-weight: bold; color: #DB7093;">※ 회원가입</span>
                             </td>
                         </tr>
                     </table>
@@ -116,6 +116,13 @@
                         </tr>
                         <tr>
                             <td style="width: 120px;">
+                                나이</td>
+                            <td>
+                                <input type="number" size="44%" name="age" min="0">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 120px;">
                                 이메일</td>
                             <td>
                                 <input type="email" name="email" size="44%">
@@ -142,7 +149,7 @@
                                 취미</td>
                             <td>
                                 <select name="hobby">
-                                    <option value="h0">선택</option>
+                                    <option value="h0" selected>선택</option>
                                     <option value="h1">낚시</option>
                                     <option value="h2">여행</option>
                                     <option value="h3">게임</option>
@@ -153,7 +160,7 @@
                         </tr>
                         <tr>
                             <td style="width: 120px;">
-                                관심분야</td>
+                                기술분야</td>
                             <td>
                                 <label><input type="checkbox" name="fav" value="f0">웹 디자인</label>
                                 <label><input type="checkbox" name="fav" value="f1">프론트엔드</label>
